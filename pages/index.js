@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import Navbar from './components/Navbar'
+import Splash from './components/Splash'
 
 function Home() {
     return (
         <div>
+            <Splash />
             <Head>
                 <title>Leona DA</title>
             </Head>
