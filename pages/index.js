@@ -1,26 +1,17 @@
-import Ghost from "./components/Ghost"
-import { getAllPosts } from '../lib/posts';
+import Head from 'next/head'
+import Navbar from './components/Navbar'
 
-export async function getStaticProps() {
-    const posts = await getAllPosts();
-    return { props: { posts } };
-}
-
-
-function HomePage({posts}) {
-    console.log(posts)
+function Home() {
     return (
         <div>
+            <Head>
+                <title>Leona DA</title>
+            </Head>
+            <Navbar />
             <h1>Hello World!</h1>
-            <Ghost />
             <p>This is my portfolio website.</p>
-            <ul>
-                {posts.map((post) => (
-                    <li key={post.id}>{post.title}</li>
-                ))}
-            </ul>
         </div>
     )
 }
 
-export default HomePage
+export default Home

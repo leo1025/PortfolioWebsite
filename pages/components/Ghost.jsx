@@ -1,17 +1,13 @@
-import { getAllPosts } from '../../lib/posts';
-
-export async function getStaticProps() {
-    const posts = await getAllPosts();
-    return { props: { posts } };
-}
-
-function Ghost({posts}) {
-    console.log(posts);
-    <ul>
-        {posts?.map((post) => (
-            <li key={post.uuid}>{post.title}</li>
-        ))}
-    </ul>
+function Ghost(props) {
+    return (
+        <div>
+            <ul>
+                {props.posts?.map((post) => (
+                    <li key={post.uuid}>{post.title}</li>
+                ))}
+            </ul>
+        </div>
+    )
 }
 
 export default Ghost
