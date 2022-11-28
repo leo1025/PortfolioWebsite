@@ -4,7 +4,7 @@ import Splash from './components/Splash'
 
 function Home() {
     return (
-        <div>
+        <div className='text-center'>
             <Splash />
             <Head>
                 <title>Leona DA</title>
