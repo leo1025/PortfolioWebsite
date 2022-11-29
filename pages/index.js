@@ -16,8 +16,8 @@ function Index() {
             </Head>
             <Navbar />
             <Home />
-            <Guide />
             <WorkCarousel />
+            <Guide />
             <Socials />
             <Footer />
         </div>

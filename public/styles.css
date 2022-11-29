@@ -197,3 +197,26 @@ body {
 .nav-link:hover {
     color: rgb(55, 189, 89);
 }
+
+.carousel-item {
+    width: 900px;
+    height: 600px;
+    margin: auto;
+}
+
+.carousel .thumb {
+    height: 45px;
+    width: 80px;
+}
+
+.carousel-container {
+    margin: 3% 10%;
+}
+
+.carousel-container h1 {
+    width: 40%;
+    margin: auto auto 5%;
+    padding: 20px;
+    background-color: rgb(66, 114, 77);
+    border-radius: 25px;
+}
