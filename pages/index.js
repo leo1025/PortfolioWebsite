@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import Navbar from './components/Navbar'
 import Splash from './components/Splash'
-import { SmallSocials } from './components/Socials'
+import Socials from './components/Socials'
 import Footer from './components/Footer'
 import Home from './components/Home'
+import WorkCarousel from './components/WorkCarousel'
+import Guide from './components/Guide'
 
 function Index() {
     return (
@@ -13,9 +15,10 @@ function Index() {
                 <title>Leona DA</title>
             </Head>
             <Navbar />
-
             <Home />
-            <SmallSocials />
+            <Guide />
+            <WorkCarousel />
+            <Socials />
             <Footer />
         </div>
     )

@@ -1,7 +1,7 @@
 function Socials() {
     return (
         <div>
-            <h4>Socials</h4>
+            <h4>Check out my Socials</h4>
             <span>
                 <button className="btn btn-primary" type="button">
                     <i className="bi bi-twitter"></i>
@@ -22,6 +22,12 @@ function Socials() {
                     <i className="bi bi-youtube"></i>
                 </a>
             </span>
+
+            <h3>Something on your mind?</h3>
+            <h1>Email me.</h1>
+            <a className="btn btn-primary" href="#!" role="button">
+                    <i className="bi bi-envelope"> Contact</i>
+            </a>
         </div>
     )
 }

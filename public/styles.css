@@ -4,8 +4,8 @@ body {
 }
 
 .navbar {
-    font-size: 1.5rem;
-    padding: 2% 1%;
+    font-size: 1.3rem;
+    padding: 2.5% 4%;
 }
 
 .navbar-brand {
@@ -99,7 +99,7 @@ body {
 
 .about {
     padding: 5% 0%;
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
 }
@@ -142,4 +142,58 @@ body {
 .si {
     font-size: .8rem;
     margin-bottom: 0%;
+}
+
+.greeting {
+    margin-left: 5%;
+    text-align: left;
+    height: 100vh;
+}
+
+.greeting h1 {
+    font-size: 4.5vw;
+    padding: 3% 0%;
+}
+
+.greeting h5 {
+    padding: 5% 0% 0%;
+    font-size: 2vw;
+}
+
+.greeting p {
+    padding: 3% 0%;
+    font-size: 1.5vw;
+}
+
+.greeting strong {
+    color:rgb(55, 189, 89)
+}
+
+.btn-offer {
+    margin-top: 5%;
+    font-size: 2vw;
+    padding: 1.5vw 1.5vw;
+}
+
+.btn-guide {
+    margin: 50px 25px;
+    width: 18% ;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.guide-bubble {
+    background-color: rgb(56, 97, 61);
+    border-radius: 25px;
+    width: 75%;
+    padding: 5% 0%;
+    margin: 5% auto;
+}
+
+.nav-link {
+    color: rgb(217, 217, 217);
+}
+
+.nav-link:hover {
+    color: rgb(55, 189, 89);
 }
