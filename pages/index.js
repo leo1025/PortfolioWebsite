@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Navbar from './components/Navbar'
 import Splash from './components/Splash'
-import Socials from './components/Socials'
+import { SmallSocials } from './components/Socials'
+import Footer from './components/Footer'
+import Home from './components/Home'
 
 function Index() {
     return (
@@ -11,7 +13,10 @@ function Index() {
                 <title>Leona DA</title>
             </Head>
             <Navbar />
-            <Socials />
+
+            <Home />
+            <SmallSocials />
+            <Footer />
         </div>
     )
 }

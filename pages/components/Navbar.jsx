@@ -5,7 +5,7 @@ function Navbar() {
     <div>
         <nav className='navbar navbar-expand-sm navbar-dark'>
             <div className='container-fluid'>
-                <Link href='/' className='navbar-brand mb-0 h1'>LeonaDA</Link>
+                <Link href='/' className='navbar-brand mb-0 h1'><strong>LeonaDA</strong></Link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
