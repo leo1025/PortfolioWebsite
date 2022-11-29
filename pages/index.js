@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Navbar from './components/Navbar'
 import Splash from './components/Splash'
+import Socials from './components/Socials'
 
-function Home() {
+function Index() {
     return (
         <div className='text-center'>
             <Splash />
@@ -10,10 +11,9 @@ function Home() {
                 <title>Leona DA</title>
             </Head>
             <Navbar />
-            <h1>Hello World!</h1>
-            <p>This is my portfolio website.</p>
+            <Socials />
         </div>
     )
 }
 
-export default Home
+export default Index
