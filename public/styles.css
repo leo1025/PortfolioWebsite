@@ -58,7 +58,7 @@ body {
 }
 
 .bi {
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 .btn-primary {
@@ -99,9 +99,19 @@ body {
 
 .about {
     padding: 5% 0%;
-    width: 90%;
-    margin: auto;
+    width: 95%;
+    height: 60vh;
+    margin: 2% auto 10%;
     display: flex;
+}
+
+.short-profile {
+    height: 100vh;
+}
+
+.short-profile p {
+    font-size: 24px;
+    text-align: left;
 }
 
 .profile {
@@ -109,7 +119,12 @@ body {
 }
 
 .profile-box {
-    padding: 10px;
+    padding: 20px;
+    margin: 10px
+}
+
+.profile-box p {
+    padding: 20px;
     margin: 10px
 }
 
@@ -127,7 +142,7 @@ body {
     padding-bottom: 10%;
     text-align: right;
     width: inherit;
-    height: 70%;
+    height: inherit;
     color: #333;
     background-color: rgb(58, 58, 58);
     border-radius: 25px;
@@ -135,8 +150,8 @@ body {
 }
 
 .small-socials {
-    margin-left: 5%;
-    text-align: left;
+    margin: auto;
+    text-align: center;
 }
 
 .si {
@@ -145,7 +160,7 @@ body {
 }
 
 .greeting {
-    margin-left: 5%;
+    margin: 5%;
     text-align: left;
     height: 100vh;
 }
@@ -177,7 +192,7 @@ body {
 
 .btn-guide {
     margin: 50px 25px;
-    width: 18% ;
+    width: 20% ;
     padding: 10px;
     font-size: 30px;
 }
@@ -185,8 +200,14 @@ body {
 .guide-bubble {
     background-color: rgb(56, 97, 61);
     border-radius: 25px;
-    width: 75%;
+    width: 60%;
     padding: 5% 0%;
+    margin: 5% auto;
+}
+
+.guide-bubble p {
+    text-align: left;
+    width: 75%;
     margin: 5% auto;
 }
 
@@ -210,13 +231,73 @@ body {
 }
 
 .carousel-container {
-    margin: 3% 10%;
+    margin: 3% 5%;
 }
 
 .carousel-container h1 {
-    width: 40%;
+    width: inherit;
     margin: auto auto 5%;
     padding: 20px;
-    background-color: rgb(66, 114, 77);
+    background-color: rgb(61, 61, 61);
     border-radius: 25px;
+}
+
+.slider-wrapper.axis-horizontal {
+    border-radius: 10px;
+}
+
+.control-arrow.control-prev {
+    width: 60px;
+}
+
+.control-arrow.control-next {
+    width: 60px;
+}
+
+.big-socials {
+    margin: 20% 0% 5%;
+}
+
+.big-socials h2 {
+    margin-bottom: 3%;
+}
+
+.email {
+    margin: 10% 0% 10%;
+}
+
+.email span {
+    display: flex;
+}
+
+.email span i {
+    font-size: 32px;
+    margin: auto 0% auto auto;
+}
+
+.email span h3 {
+    font-size: 27px;
+    margin: auto auto auto 5%;
+}
+
+.btn-email {
+    width: 250px;
+}
+
+.skills-showcase {
+    background-color: rgb(59, 59, 59);
+    border-radius: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0% auto 10%;
+    text-shadow: 2px 2px rgb(4, 43, 12);
+}
+
+.fade-in {
+    transition: opacity 1s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
 }

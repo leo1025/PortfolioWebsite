@@ -6,4 +6,13 @@ function CoolThing() {
     )
 }
 
+function SmallCoolThing() {
+    return(
+        <div className="">
+            <p>Cool thing to be put here soon...</p>
+        </div>
+    )
+}
+
 export default CoolThing
+export {CoolThing, SmallCoolThing}

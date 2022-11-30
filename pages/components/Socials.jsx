@@ -1,33 +1,33 @@
 function Socials() {
     return (
         <div>
-            <h4>Check out my Socials</h4>
-            <span>
-                <button className="btn btn-primary" type="button">
-                    <i className="bi bi-twitter"></i>
-                </button>
-                <a className="btn btn-primary" href="#!" role="button">
-                    <i className="bi bi-instagram"></i>
+            <div className="big-socials">
+                <h2>Check out my socials!</h2>
+                <span>
+                    <button className="btn btn-primary" type="button">
+                        <i className="bi bi-twitter"></i>
+                    </button>
+                    <a className="btn btn-primary" href="#!" role="button">
+                        <i className="bi bi-instagram"></i>
+                    </a>
+                    <a className="btn btn-primary" href="#!" role="button">
+                        <i className="bi bi-linkedin"></i>
+                    </a>
+                    <a className="btn btn-primary" href="#!" role="button">
+                        <i className="bi bi-github"></i>
+                    </a>
+                </span>
+            </div>
+            <div className="email">
+                <h2>Something on your mind?</h2>
+                <p>Check out the contacts pages for more information.</p>
+                <a className="btn btn-primary btn-email" href="#!" role="button">
+                    <span>
+                        <i className="bi bi-envelope"></i>
+                        <h3>Email Me</h3>
+                    </span>
                 </a>
-                <a className="btn btn-primary" href="#!" role="button">
-                    <i className="bi bi-linkedin"></i>
-                </a>
-                <a className="btn btn-primary" href="#!" role="button">
-                    <i className="bi bi-github"></i>
-                </a>
-                <a className="btn btn-primary" href="#!" role="button">
-                    <i className="bi bi-twitch"></i>
-                </a>
-                <a className="btn btn-primary" href="#!" role="button">
-                    <i className="bi bi-youtube"></i>
-                </a>
-            </span>
-
-            <h3>Something on your mind?</h3>
-            <h1>Email me.</h1>
-            <a className="btn btn-primary" href="#!" role="button">
-                    <i className="bi bi-envelope"> Contact</i>
-            </a>
+            </div>
         </div>
     )
 }
@@ -49,10 +49,7 @@ function SmallSocials() {
                     <i className="si bi-github"></i>
                 </a>
                 <a className="btn btn-primary" href="#!" role="button">
-                    <i className="si bi-twitch"></i>
-                </a>
-                <a className="btn btn-primary" href="#!" role="button">
-                    <i className="si bi-youtube"></i>
+                    <i className="si bi-envelope"></i>
                 </a>
             </span>
         </div>

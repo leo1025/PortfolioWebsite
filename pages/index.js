@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import WorkCarousel from './components/WorkCarousel'
 import Guide from './components/Guide'
+import { ShortProfile } from './components/Profile'
 
 function Index() {
     return (
@@ -16,6 +17,7 @@ function Index() {
             </Head>
             <Navbar />
             <Home />
+            <ShortProfile />
             <WorkCarousel />
             <Guide />
             <Socials />
