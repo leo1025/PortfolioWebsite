@@ -100,7 +100,7 @@ body {
 .about {
     padding: 5% 0%;
     width: 95%;
-    height: 60vh;
+    height: 80vh;
     margin: 2% auto 10%;
     display: flex;
 }
@@ -155,7 +155,7 @@ body {
 }
 
 .si {
-    font-size: .8rem;
+    font-size: 1rem;
     margin-bottom: 0%;
 }
 
@@ -300,4 +300,12 @@ body {
 .fade-out {
     opacity: 0;
     transition: opacity 1s ease;
+}
+
+.resume-base {
+    background-color: rgb(63, 63, 63);
+    border-radius: 20px;
+    width: 90%;
+    height: 100%;
+    margin: auto;
 }
