@@ -18,12 +18,12 @@ function SkillBar(props) {
 
     const fillerStyles = {
         width: `${fill}%`,
-        paddingTop: '10px',
-        paddingBottom: '10px',
-        backgroundColor: "#1a7b24",
-        borderRadius: '20px',
+        paddingTop: '12px',
+        paddingBottom: '12px',
+        backgroundColor: "#4acf38",
+        borderRadius: '10px',
         transition: 'width 1s ease-in-out',
-        transitionDelay: '1s'
+        transitionDelay: '0.5s'
     }
 
     useEffect(() => {
@@ -36,9 +36,9 @@ function SkillBar(props) {
 
     return (
         <div className="col-md-6">
-            <div className="row">
-                <div className="col-5 text-start"><p>{name}</p></div>
-                <div className="col-7 text-start">
+            <div className="row mt-5">
+                <div className="text-start">
+                    <p className="fs-5">{name}</p>
                     <div style={containerStyles}>
                         <div ref={ref} style={fillerStyles}></div>
                     </div>

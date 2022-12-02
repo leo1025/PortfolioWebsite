@@ -1,6 +1,7 @@
 import Ghost from "./components/Ghost"
 import { getAllPosts } from '../lib/posts';
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 // Get master list of posts from Ghost CMS
 export async function getStaticProps() {
@@ -12,8 +13,10 @@ function Portfolio({posts}) {
     return (
         <div>
             <Navbar />
-            <h1>This is the Portfolio Page.</h1>
-            <Ghost posts={posts} />
+            <div className="vh-100">
+                
+            </div>
+            <Footer />
         </div>
     )
 }
