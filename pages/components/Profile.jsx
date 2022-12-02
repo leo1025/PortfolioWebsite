@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 function Profile() {
@@ -31,22 +32,31 @@ function ShortProfile() {
 
     const [idx, setIdx] = useState(0);
     const [skill, setSkill] = useState(skills[idx]);
+    const [fadeState, setFadeState] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setIdx((idx + 1) % skills.length);
-            setSkill(skills[idx]);
-        }, 5000)
+            if(fadeState) {
+                setIdx((idx + 1) % skills.length);
+                setSkill(skills[idx]);
+            }
+            setFadeState(!fadeState);
+        }, 2000)
         return () => {
             clearInterval(interval);
         }
     })
 
     return (
-        <div className="">
+        <div style={{paddingTop: '2%'}} id='about'>
             <div className="short-profile greeting">
-                <div className='skills-showcase'>
-                    <h1><strong className='skills-fade text-pad-left'>{skill}</strong></h1>
+                <div className='skills-showcase title'>
+                    <h1
+                        style={{fontSize: '4.25vw'}}
+                        className={`${fadeState ? "fade-out" : "fade-in"}`}
+                    >
+                        <strong className='skills-fade text-pad-left'>{skill}</strong>
+                    </h1>
                 </div>
                 <div className='container-fluid'>
                     <div className='row' style={{height: 'auto'}}>
@@ -57,8 +67,8 @@ function ShortProfile() {
                 </div>
                 <div className='container'>
                     <p>I'm a Peruvian Immigrant that moved to the United States at a young age. Where I studied and grew up in Louisville Kentucky. I studied my undergrad up at Dartmouth College where I got my B.A. in Computer Science and Digital Arts. I'm a curious person and always doing a lot of random things. In my professional career, I'm currently an freelance artist and developer and a online educator on the side. Still searching for a professional position to get my foot in the door.</p>
-                    <p>Wanna know more? Go to my <button className="btn btn-outline-light">About</button> page.</p>
-                    <p>Wanna see the things I've been working on? Keep scrolling!</p>
+                    <p>Wanna know more? Go to my <Link className='text-link' href="/about" scroll={false}>About</Link> page.</p>
+                    <p>Wanna see the things I've been working on? <Link className='text-link' href="#work" scroll={false}>Click here!</Link> </p>
                 </div>
             </div>
         </div>

@@ -1,10 +1,12 @@
+import Link from "next/link"
+
 function Home() {
     return (
-        <div className="greeting">
+        <div id="welcome" className="greeting">
             <h5>Hi. Call me <strong>Leona</strong>.</h5>
-            <h1>I'm a <strong>Software Engineer</strong> and <strong>Digital Artist</strong></h1>
-            <p>I do a lot of things and make a lot more things. From working in teaching and education to developing games and art pieces. Take a look around and enjoy my myriad of endeavors I've undertaken.</p>
-            <button className="btn btn-outline-light btn-offer">Who am I?</button>
+            <h1 className="title">I'm a <strong>Digital Artist</strong></h1>
+            <p>I do a lot of things. From working in teaching and education to developing games and art pieces. I'm interested in all things Computers and Art, always looking for a new way to brings both fields together in a fun and interesting way. Take a look around and enjoy my myriad of endeavors I've undertaken.</p>
+            <Link className="btn btn-outline-light btn-offer" href='#about' scroll={false}>Want to know more?</Link>
         </div>
     )
 }

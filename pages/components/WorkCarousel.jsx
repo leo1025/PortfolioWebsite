@@ -3,9 +3,9 @@ import { Carousel } from 'react-responsive-carousel';
 
 function WorkCarousel() {
     return (
-        <div>
+        <div style={{paddingTop: '2%'}} id="work">
             <div className="carousel-container">
-                <h1>Recent Projects</h1>
+                <h1 className="title"><strong>RECENT PROJECTS</strong></h1>
                 <Carousel>
                     <div>
                         <img className="carousel-item" src="./img1.jpg" alt="image1"/>

@@ -16,11 +16,13 @@ function Index() {
                 <title>Leona DA</title>
             </Head>
             <Navbar />
-            <Home />
-            <ShortProfile />
-            <WorkCarousel />
-            <Guide />
-            <Socials />
+            <div className='content'>
+                <Home />
+                <ShortProfile />
+                <WorkCarousel />
+                <Guide />
+                <Socials />
+            </div>
             <Footer />
         </div>
     )

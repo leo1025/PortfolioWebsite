@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 2px 2px rgb(4, 43, 12);
+}
+
 body {
     color: white;
     background-color: #333;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
 }
 
 .navbar {
     font-size: 1.3rem;
-    padding: 2.5% 4%;
+    padding: 1% 4%;
 }
 
 .navbar-brand {
@@ -61,17 +76,23 @@ body {
     font-size: 2rem;
 }
 
-.btn-primary {
+.btn-main {
     background-color: rgb(66, 114, 77);
     border-color: rgb(66, 114, 77);
     margin: 5px;
 }
 
-.btn-primary:hover {
+.btn-main:hover {
     transform: scale(1.1);
     background-color: rgb(115, 168, 128);
     border-color: rgb(115, 168, 128);
     animation: puff .1s linear;
+}
+
+.btn-main:active {
+    background-color: rgb(56, 88, 65) !important;
+    border-color: rgb(56, 88, 65) !important;
+    box-shadow: none;
 }
 
 @keyframes puff {
@@ -89,6 +110,13 @@ body {
         background-color: rgb(115, 168, 128);
         border-color: rgb(115, 168, 128);
     }
+}
+
+.footer {
+    background-color: rgb(46, 46, 46);
+    height: 70px;
+    padding-top: 25px;
+    margin-top: 1%;
 }
 
 .footer-text {
@@ -166,7 +194,7 @@ body {
 }
 
 .greeting h1 {
-    font-size: 4.5vw;
+    font-size: 7vw;
     padding: 3% 0%;
 }
 
@@ -177,7 +205,7 @@ body {
 
 .greeting p {
     padding: 3% 0%;
-    font-size: 1.5vw;
+    font-size: 2vw;
 }
 
 .greeting strong {
@@ -194,7 +222,7 @@ body {
     margin: 50px 25px;
     width: 20% ;
     padding: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .guide-bubble {
@@ -275,6 +303,10 @@ body {
     margin: auto 0% auto auto;
 }
 
+.email h2 {
+    margin-bottom: 3%;
+}
+
 .email span h3 {
     font-size: 27px;
     margin: auto auto auto 5%;
@@ -294,12 +326,12 @@ body {
 }
 
 .fade-in {
-    transition: opacity 1s ease;
+    transition: opacity 0.25s ease;
 }
 
 .fade-out {
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 0.25s ease;
 }
 
 .resume-base {
@@ -308,4 +340,26 @@ body {
     width: 90%;
     height: 100%;
     margin: auto;
+}
+
+.text-link {
+    color: rgb(67, 211, 83);
+}
+
+.text-link:link {
+    text-decoration: none;
+
+}
+
+.text-link:visited {
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: none;
+    color: rgb(169, 255, 182);
+}
+
+.text-link:active {
+    text-decoration: none;
 }
