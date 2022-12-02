@@ -6,11 +6,34 @@
     text-shadow: 2px 2px rgb(4, 43, 12);
 }
 
+.title-name strong {
+    color: rgb(55, 189, 89);
+}
+
+.important-name {
+    font-size: 4.5vw;
+    color: rgb(49, 104, 66);
+}
+
+.highlight {
+    color: rgb(55, 189, 89);
+}
+
+.alt-resume {
+    background-color: #2c2d2c;
+}
+
 body {
     color: white;
     background-color: #333;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+}
+
+.logo {
+    width: 250px;
+    height: 190px;
+    margin-left: 15%;
 }
 
 .content {
@@ -266,7 +289,6 @@ body {
     width: inherit;
     margin: auto auto 5%;
     padding: 20px;
-    background-color: rgb(61, 61, 61);
     border-radius: 25px;
 }
 
@@ -363,3 +385,9 @@ body {
 .text-link:active {
     text-decoration: none;
 }
+
+.list-group-item {
+    background-color: inherit;
+    color: inherit;
+}
+
