@@ -3,6 +3,7 @@
     "@tryghost/content-api": "^1.11.4",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2",
+    "html-react-parser": "^3.0.4",
     "next": "^13.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

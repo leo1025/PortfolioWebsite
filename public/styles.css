@@ -391,3 +391,89 @@ body {
     color: inherit;
 }
 
+.my-card {
+    background-color: #2c2d2c;
+    padding: 5%;
+    border-radius: 10px;
+    height: 95%;
+    margin: 10% 0%;
+    transform: scale(1.0);
+    transition: background-color 100ms linear, transform 100ms linear;
+}
+
+.my-card:hover {
+    background-color: rgb(56, 88, 65);
+    transform: scale(1.1);
+}
+
+.img-feature {
+    width: 100%;
+    height: auto;
+    padding: 0%;
+}
+
+.project-focus {
+    text-align: center;
+    font-size: 25px;
+}
+
+.kg-image-card {
+    float: left;
+    width: 50%;
+    margin: 3%;
+}
+
+.project-focus .kg-image {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.kg-card {
+    border: 2px solid #fff;
+    padding: 9px;
+    margin: 5px !important;
+    text-align: center;
+    margin: auto;
+    display: inline;
+    text-decoration: none;
+    box-shadow: 2px 2px;
+    color: #fff;
+}
+
+.kg-card:hover {
+    color: #111;
+    background-color: #fff;
+}
+
+.kg-card a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-focus p {
+    margin-top: 2%;
+    text-align: left;
+    text-indent: 2rem;
+}
+
+.project-title {
+    background-color: rgb(56, 97, 61);
+    border-radius: 15px;
+    text-align: center;
+    padding: 7px;
+    margin: 2% auto 8%;
+    width: 50%;
+}
+
+.skills-used {
+    display: inline;
+}
+
+.skills-used li {
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(49, 104, 66);
+    border-radius: 10px;
+}
