@@ -1,7 +1,6 @@
 import parse from 'html-react-parser'
 
 function ProjectFocus({post, tags}) {
-    console.log(post);
     const postString = post.html.toString();
 
     return (
@@ -14,12 +13,14 @@ function ProjectFocus({post, tags}) {
                 <h4 className='py-3'>{post.feature_image_caption}</h4>
             </div>
             <div className='project-focus'>
+                <hr />
                 <ul className="skills-used">
                     {tags.map((tag) => {
                         return <li>{tag.name}</li>
                     })}
                 </ul>
-                <div className='py-5'>
+                <hr className='py-2'/>
+                <div>
                     {parse(postString)}
                 </div>
             </div>

@@ -151,7 +151,7 @@ body {
 .about {
     padding: 5% 0%;
     width: 95%;
-    height: 80vh;
+    height: 100vh;
     margin: 2% auto 10%;
     display: flex;
 }
@@ -270,15 +270,21 @@ body {
     color: rgb(55, 189, 89);
 }
 
+.control-arrow {
+    border-radius: 10px;
+}
+
 .carousel-item {
-    width: 900px;
-    height: 600px;
+    object-fit: cover;
+    max-width:100%;
+    max-height:50vh;
     margin: auto;
 }
 
 .carousel .thumb {
     height: 45px;
     width: 80px;
+    border-radius: 5px;
 }
 
 .carousel-container {
@@ -406,6 +412,11 @@ body {
     transform: scale(1.1);
 }
 
+.my-card:active {
+    background-color: rgb(115, 168, 128);
+    transform: scale(1.05);
+}
+
 .img-feature {
     width: 100%;
     height: auto;
@@ -420,7 +431,8 @@ body {
 .kg-image-card {
     float: left;
     width: 50%;
-    margin: 3%;
+    margin: auto 2%;
+    border: 5px solid #2c2d2c;
 }
 
 .project-focus .kg-image {
@@ -429,26 +441,24 @@ body {
     margin: auto;
 }
 
-.kg-card {
-    border: 2px solid #fff;
-    padding: 9px;
-    margin: 5px !important;
-    text-align: center;
-    margin: auto;
+.kg-button-card {
     display: inline;
-    text-decoration: none;
-    box-shadow: 2px 2px;
-    color: #fff;
 }
 
-.kg-card:hover {
-    color: #111;
+.kg-btn {
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    box-shadow: 3px 2px rgb(255, 255, 255);
+}
+
+.kg-btn:hover {
     background-color: #fff;
-}
-
-.kg-card a {
-    color: #fff;
-    text-decoration: none;
+    color: #2c2d2c;
+    box-shadow: 3px 2px rgb(41, 41, 41);
+    transition: background-color 100ms linear, color 100ms linear, box-shadow 100ms linear;
 }
 
 .project-focus p {
@@ -462,7 +472,7 @@ body {
     border-radius: 15px;
     text-align: center;
     padding: 7px;
-    margin: 2% auto 8%;
+    margin: 2% auto 4%;
     width: 50%;
 }
 

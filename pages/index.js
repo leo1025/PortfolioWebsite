@@ -7,8 +7,14 @@ import Home from './components/Home'
 import WorkCarousel from './components/WorkCarousel'
 import Guide from './components/Guide'
 import { ShortProfile } from './components/Profile'
+import { getTopThree } from '../lib/posts';
 
-function Index() {
+export async function getStaticProps() {
+    const posts = await getTopThree();
+    return { props: { posts } };
+}
+
+function Index({posts}) {
     return (
         <div className='text-center'>
             <Splash />
@@ -19,7 +25,7 @@ function Index() {
             <div className='content'>
                 <Home />
                 <ShortProfile />
-                <WorkCarousel />
+                <WorkCarousel data={posts}/>
                 <Guide />
                 <Socials />
             </div>
