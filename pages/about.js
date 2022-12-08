@@ -9,11 +9,18 @@ function About() {
     return (
         <div className='text-center'>
             <Navbar />
-            <div className='about'>
-                <Profile />
-                <CoolThing />
+            <div className='about container vh-auto py-1'>
+                <div className='row'>
+                    <div className='col-md-6'>
+                        <Profile />
+                    </div>
+                    <div className='col-md-6'>
+                        <CoolThing />
+                        <h4 className='py-3 title'>Anaru from my college short film "Anaru"</h4>
+                    </div>
+                </div>
+                <Guide />
             </div>
-            <Guide />
             <SmallSocials />
             <Footer />
         </div>

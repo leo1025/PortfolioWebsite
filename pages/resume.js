@@ -19,8 +19,8 @@ function Resume({posts}) {
             <Navbar />
             <div className='py-5'>
                 <div className='text-center resume-base text-start'>
-                    <button className='btn btn-outline-light btn-guide p-2 w-25'>Download Resume</button>
-                    <div className='alt-resume p-5 title-name'>
+                    <button className='btn btn-outline-light btn-guide p-2 w-auto'>Download Resume</button>
+                    <div className='alt-resume py-5 title-name'>
                         <h1 className='title'><strong>LEONA</strong> - IOSEF LEONARDO CASAS GUTIERREZ</h1>
                         <p className='fs-4 p-2' >The <strong>Arts</strong> and <strong>Sciences</strong> are inseparable, one can't exist without the other.</p>
                     </div>
@@ -30,7 +30,7 @@ function Resume({posts}) {
                         <WorkCarousel data={posts}/>
                         <Skills />
                         <Guide />
-                        <div className='py-2'></div>
+                        <div className='py-1'></div>
                     </div>
                 </div>
                 <div className='text-center'>

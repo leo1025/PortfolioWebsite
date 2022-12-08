@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 function Profile() {
     return (
-        <div className="profile">
+        <div className="">
             <div className="profile-box">
                 <h2 className="text-center greeting" style={{height: '50px'}}>JUST CALL ME <strong>LEONA</strong></h2>
                 <div className="profile-quote">
@@ -48,14 +48,11 @@ function ShortProfile() {
     })
 
     return (
-        <div style={{paddingTop: '2%'}} id='about'>
+        <div style={{paddingTop: '3%'}} id='about'>
             <div className="short-profile greeting">
                 <div className='skills-showcase title'>
-                    <h1
-                        style={{fontSize: '4.25vw'}}
-                        className={`${fadeState ? "fade-out" : "fade-in"}`}
-                    >
-                        <strong className='skills-fade text-pad-left'>{skill}</strong>
+                    <h1 className={`${fadeState ? "fade-out skill-banner" : "fade-in skill-banner"}`} >
+                        <strong>{skill}</strong>
                     </h1>
                 </div>
                 <div className='container-fluid'>

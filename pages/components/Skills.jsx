@@ -41,7 +41,7 @@ function Skills() {
      ];
 
     return (
-        <div className="alt-resume py-3 px-5">
+        <div className="alt-resume py-3 px-3">
             <h1 className="fs-1 title profile-quote">Skills</h1>
             <div className="row m-auto pb-5">
                 <h4 className="pt-5 title fs-2">Professional Skills</h4>
