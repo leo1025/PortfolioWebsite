@@ -4,7 +4,7 @@ function ProjectFocus({post, tags}) {
     const postString = post.html.toString();
 
     return (
-        <div className='container resume-base p-5'>
+        <div className='container resume-base p-4'>
             <div className='project-title title'>
                 <h1>{post.title}</h1>
             </div>

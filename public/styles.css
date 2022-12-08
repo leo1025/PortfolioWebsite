@@ -188,13 +188,13 @@ body {
 }
 
 .profile-box {
-    padding: 20px;
-    margin: 10px
+    padding: 2%;
+    margin: 1%;
 }
 
 .profile-box p {
-    padding: 20px;
-    margin: 10px
+    padding: 2%;
+    font-size: 18px;
 }
 
 .profile-quote {
@@ -497,6 +497,16 @@ body {
     margin: auto;
 }
 
+
+@media screen and (max-width: 600px) {
+    .kg-image-card {
+       width: 100%;
+    }
+
+    .project-focus {
+        font-size: 18px;
+    }
+}
 .kg-button-card {
     display: inline;
 }
@@ -519,7 +529,7 @@ body {
 
 .project-focus p {
     margin-top: 2%;
-    text-align: left;
+    text-align: justify;
     text-indent: 2rem;
 }
 
@@ -529,7 +539,7 @@ body {
     text-align: center;
     padding: 7px;
     margin: 2% auto 4%;
-    width: 50%;
+    width: auto;
 }
 
 .skills-used {
