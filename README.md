@@ -5,9 +5,10 @@ This repo is the source-code for my Personal Portfolio website. It is made in a 
 
 ## Tech-Stack
 
-- Next.JS
-- React
-- Node.JS
+- NextJS
+- ReactJS
+- ThreeJS
+- NodeJS
 - Javascript
 - Ghost CMS
 - Ubuntu

@@ -3,7 +3,6 @@ import { Carousel } from 'react-responsive-carousel';
 import Link from "next/link";
 
 function WorkCarousel({data}) {
-    console.log(data);
     return (
         <div style={{paddingTop: '2%'}} id="work">
             <div className="carousel-container">
