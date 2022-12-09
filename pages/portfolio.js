@@ -16,7 +16,7 @@ function Portfolio({posts}) {
             <Navbar />
             <div className='container'>
                 <div className="row">
-                    {posts.map((p) => {
+                    {posts?.map((p) => {
                         return <ProjectCard post={p} />
                     })}
                 </div>

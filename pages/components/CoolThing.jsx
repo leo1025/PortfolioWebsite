@@ -1,16 +1,23 @@
+import { lazy, Suspense } from 'react'
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
-import CustomMesh from "./CustomMesh"
+import dynamic from 'next/dynamic'
+
+const ModelComponent = dynamic(() => import('./CustomMesh'), {
+    ssr: false
+})
 
 function CoolThing() {
     return(
         <div className="coolthing">
-            <Canvas dpr={[1, 2]} camera={{ fov: 50, position: [0, 0, 5] }} shadows={true}>
-                <ambientLight color={"white"} intensity={0.3} />
-                <spotLight intensity={0.35} angle={0.2} penumbra={1} position={[-10, 15, 10]} castShadow />
-                <CustomMesh position={[-.3, -2.1, -1.3]} shadows={true}/>
-                <OrbitControls autoRotate />
-            </Canvas>
+            <Suspense fallback={"loading"}>
+                <Canvas dpr={[1, 2]} camera={{ fov: 50, position: [0, 0, 5] }} shadows={true}>
+                    <ambientLight color={"white"} intensity={0.3} />
+                    <spotLight intensity={0.35} angle={0.2} penumbra={1} position={[-10, 15, 10]} castShadow />
+                    <ModelComponent position={[-.3, -2.2, -1.3]} shadows={true}/>
+                    <OrbitControls autoRotate />
+                </Canvas>
+            </Suspense>
         </div>
     )
 }

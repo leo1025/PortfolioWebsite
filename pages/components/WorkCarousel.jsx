@@ -8,7 +8,7 @@ function WorkCarousel({data}) {
             <div className="carousel-container">
                 <h1 className="fs-1 title profile-quote"><strong>RECENT PROJECTS</strong></h1>
                 <Carousel>
-                    {data.map((post) => {
+                    {data?.map((post) => {
                         return (
                             <Link style={{textDecoration: 'none', color: 'inherit'}}
                                 href={{pathname: `/${post.slug}`}}>
