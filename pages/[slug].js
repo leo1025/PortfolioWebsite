@@ -1,6 +1,6 @@
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import ProjectFocus from "./components/ProjectFocus"
+import Footer from "/components/Footer";
+import Navbar from "/components/Navbar";
+import ProjectFocus from "/components/ProjectFocus"
 import { getAllPosts, getPostFrom } from '../lib/posts'
 
 function Post(props) {

@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import Socials from './components/Socials'
+import Footer from '/components/Footer'
+import Navbar from '/components/Navbar'
+import Socials from '/components/Socials'
 
 function Contact() {
     return (

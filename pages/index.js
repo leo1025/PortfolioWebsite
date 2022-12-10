@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Navbar from './components/Navbar'
-import Splash from './components/Splash'
-import Socials from './components/Socials'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import WorkCarousel from './components/WorkCarousel'
-import Guide from './components/Guide'
-import { ShortProfile } from './components/Profile'
+import Navbar from '/components/Navbar'
+import Splash from '/components/Splash'
+import Socials from '/components/Socials'
+import Footer from '/components/Footer'
+import Home from '/components/Home'
+import WorkCarousel from '/components/WorkCarousel'
+import Guide from '/components/Guide'
+import { ShortProfile } from '/components/Profile'
 import { getTopThree } from '../lib/posts';
 
 export async function getStaticProps() {

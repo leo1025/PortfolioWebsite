@@ -1,9 +1,9 @@
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Profile from './components/Profile'
-import CoolThing from './components/CoolThing'
-import { SmallSocials } from './components/Socials'
-import Guide from './components/Guide'
+import Navbar from '/components/Navbar'
+import Footer from '/components/Footer'
+import Profile from '/components/Profile'
+import CoolThing from '/components/CoolThing'
+import { SmallSocials } from '/components/Socials'
+import Guide from '/components/Guide'
 
 function About() {
     return (

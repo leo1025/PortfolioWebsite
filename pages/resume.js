@@ -1,11 +1,11 @@
-import Education from './components/Education'
-import Experience from './components/Experience'
-import Navbar from './components/Navbar'
-import Skills from './components/Skills'
-import WorkCarousel from './components/WorkCarousel'
-import Footer from './components/Footer'
-import { SmallSocials } from './components/Socials'
-import Guide from './components/Guide'
+import Education from '/components/Education'
+import Experience from '/components/Experience'
+import Navbar from '/components/Navbar'
+import Skills from '/components/Skills'
+import WorkCarousel from '/components/WorkCarousel'
+import Footer from '/components/Footer'
+import { SmallSocials } from '/components/Socials'
+import Guide from '/components/Guide'
 import { getTopThree } from '../lib/posts';
 
 export async function getStaticProps() {

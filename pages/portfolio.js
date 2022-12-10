@@ -1,8 +1,8 @@
 import { getAllPosts } from '../lib/posts';
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import ProjectCard from "./components/ProjectCard";
-import { SmallSocials } from './components/Socials'
+import Navbar from '/components/Navbar'
+import Footer from '/components/Footer'
+import ProjectCard from "/components/ProjectCard";
+import { SmallSocials } from '/components/Socials'
 
 // Get master list of posts from Ghost CMS
 export async function getStaticProps() {
