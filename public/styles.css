@@ -542,8 +542,8 @@ body {
 }
 
 .list-group-item {
-    background-color: inherit;
-    color: inherit;
+    background-color: inherit !important;
+    color: inherit !important;
 }
 
 .my-card {

@@ -19,7 +19,7 @@ function Resume({posts}) {
             <Navbar />
             <div className='py-5 resume'>
                 <div className='text-center resume-base text-start'>
-                    <button className='btn btn-outline-light btn-guide p-2 w-auto'>Download Resume</button>
+                    <a className='btn btn-outline-light btn-guide p-2 w-auto' href='/Resume.pdf'>Download Resume</a>
                     <div className='alt-resume py-5 title-name'>
                         <h1 className='title'><strong>LEONA</strong> - IOSEF LEONARDO CASAS GUTIERREZ</h1>
                         <p className='fs-4 p-2' >The <strong>Arts</strong> and <strong>Sciences</strong> are inseparable, one can't exist without the other.</p>
