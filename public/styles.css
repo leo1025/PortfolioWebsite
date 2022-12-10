@@ -31,11 +31,11 @@
 
 @media screen and (max-width: 600px) {
     .important-name {
-        font-size: 25px;
+        font-size: 25px !important;
     }
 
     .contact {
-        width: 100%;
+        width: 100% !important;
     }
 
     .contact h1 {
@@ -43,8 +43,8 @@
     }
 
     .contact p {
-        font-size: 18px;
-        margin: 1% 0%;
+        font-size: 18px !important;
+        margin: 1% 0% !important;
     }
 }
 
@@ -75,12 +75,12 @@ body {
 }
 
 .navbar {
-    font-size: 1.3rem;
-    padding: 1% 4%;
+    font-size: 1.3rem !important;
+    padding: 1% 4% !important;
 }
 
 .navbar-brand {
-    font-size: 1.7rem;
+    font-size: 1.7rem !important;
 }
 
 .splash-container {
@@ -129,20 +129,25 @@ body {
 }
 
 .bi {
-    font-size: 2rem;
+    font-size: 2rem !important;
 }
 
 .btn-main {
-    background-color: rgb(66, 114, 77);
-    border-color: rgb(66, 114, 77);
-    margin: 5px;
+    background-color: rgb(66, 114, 77) !important;
+    border-color: rgb(66, 114, 77) !important;
+    margin: 5px !important;
 }
 
 .btn-main:hover {
-    transform: scale(1.1);
-    background-color: rgb(115, 168, 128);
-    border-color: rgb(115, 168, 128);
-    animation: puff .1s linear;
+    transform: scale(1.1) !important;
+    background-color: rgb(115, 168, 128) !important;
+    border-color: rgb(115, 168, 128) !important;
+    animation: puff .1s linear !important;
+    -webkit-transform: scale(1.1) !important;
+    -moz-transform: scale(1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    -o-transform: scale(1.1) !important;
+    -webkit-animation: puff .1s linear !important;
 }
 
 .btn-main:active {
@@ -154,8 +159,8 @@ body {
 @keyframes puff {
     0% {
         transform: scale(1);
-        background-color: rgb(66, 114, 77);
-        border-color: rgb(66, 114, 77);
+        background-color: rgb(66, 114, 77) !important;
+        border-color: rgb(66, 114, 77) !important;
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
@@ -163,8 +168,8 @@ body {
     }
     100% {
         transform: scale(1.1);
-        background-color: rgb(115, 168, 128);
-        border-color: rgb(115, 168, 128);
+        background-color: rgb(115, 168, 128) !important;
+        border-color: rgb(115, 168, 128) !important;
     }
 }
 
@@ -263,13 +268,13 @@ body {
 
 
 .small-socials {
-    margin: auto;
-    text-align: center;
+    margin: auto !important;
+    text-align: center !important;
 }
 
 .si {
-    font-size: 1.5rem;
-    margin-bottom: 0%;
+    font-size: 1.5rem !important;
+    margin-bottom: 0% !important;
 }
 
 .greeting {
@@ -295,9 +300,9 @@ body {
 }
 
 .btn-offer {
-    margin-top: 3%;
-    font-size: 40px;
-    padding: 25px;
+    margin-top: 3% !important;
+    font-size: 40px !important;
+    padding: 25px !important;
 }
 
 #about {
@@ -353,7 +358,7 @@ body {
 }
 
 .guide-bubble {
-    background-color: rgb(56, 97, 61);
+    background-color: rgb(56, 97, 61) !important;
     border-radius: 25px;
     width: 40%;
     padding: 5% 0%;
@@ -394,11 +399,11 @@ body {
 }
 
 .nav-link {
-    color: rgb(217, 217, 217);
+    color: rgb(217, 217, 217) !important;
 }
 
 .nav-link:hover {
-    color: rgb(55, 189, 89);
+    color: rgb(55, 189, 89) !important;
 }
 
 .control-arrow {
@@ -508,14 +513,14 @@ body {
 }
 
 .resume-base {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(63, 63, 63) !important;
     border-radius: 20px;
     height: 100%;
     margin: auto;
 }
 
 .text-link {
-    color: rgb(67, 211, 83);
+    color: rgb(67, 211, 83) !important;
 }
 
 .text-link:link {
@@ -638,6 +643,6 @@ body {
     display: inline;
     padding: 10px;
     margin: 5px;
-    background-color: rgb(49, 104, 66);
+    background-color: rgb(49, 104, 66) !important;
     border-radius: 10px;
 }
