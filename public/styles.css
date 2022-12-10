@@ -49,8 +49,6 @@
 }
 
 
-
-
 .highlight {
     color: rgb(55, 189, 89);
 }
@@ -60,10 +58,10 @@
 }
 
 body {
-    color: white;
-    background-color: #333;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
+    color: white !important;
+    background-color: #333 !important;
+    font-family: 'Roboto', sans-serif !important;
+    scroll-behavior: smooth !important;
 }
 
 .logo {
