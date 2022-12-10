@@ -15,9 +15,9 @@ export async function getStaticProps() {
 
 function Resume({posts}) {
     return (
-        <div>
+        <div className='text-center'>
             <Navbar />
-            <div className='py-5'>
+            <div className='py-5 resume'>
                 <div className='text-center resume-base text-start'>
                     <button className='btn btn-outline-light btn-guide p-2 w-auto'>Download Resume</button>
                     <div className='alt-resume py-5 title-name'>
@@ -29,14 +29,14 @@ function Resume({posts}) {
                     <div className='text-center'>
                         <WorkCarousel data={posts}/>
                         <Skills />
-                        <Guide />
-                        <div className='py-1'></div>
+                        <div className='py-3'></div>
                     </div>
                 </div>
                 <div className='text-center'>
                     <div className='py-2'></div>
                 </div>
             </div>
+            <Guide />
             <SmallSocials />
             <Footer />
         </div>

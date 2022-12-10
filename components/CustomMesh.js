@@ -1,9 +1,8 @@
-import { GLTFLoader } from 'three/examples/jsm/loaders/gltfloader';
-import { useLoader } from '@react-three/fiber';
+import { useGLTF } from '@react-three/drei';
 import { getBaseUrl } from "nextjs-url";
 
 function CustomMesh({...props}) {
-  const gltf = useLoader(GLTFLoader, `${getBaseUrl().href}/Anaru.glb`)
+  const gltf = useGLTF(`${getBaseUrl().href}/Anaru.glb`);
 
   return (
     <mesh {...props} >

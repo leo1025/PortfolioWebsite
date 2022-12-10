@@ -3,7 +3,7 @@ import Link from 'next/link';
 function Navbar() {
     return (
     <div>
-        <nav className='navbar navbar-expand-sm navbar-dark'>
+        <nav className='navbar navbar-expand-sm navbar-dark py-3'>
             <div className='container-fluid'>
                 <Link href='/' className='navbar-brand mb-0 h1'><strong>LeonaDA</strong></Link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
